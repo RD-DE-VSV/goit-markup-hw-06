@@ -729,3 +729,100 @@ img {
 
   transition: fill var(--anim-base) var(--anim-timing);
 }
+.modal-title {
+  display: block;
+  margin-bottom: 16px;
+  padding-top: 48px;
+
+  font-weight: 500;
+  text-align: center;
+
+  color: var(--color-txt-caption-navy-blue);
+}
+.modal-form {
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-border-light-slate);
+}
+.modal-form-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 38px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+
+  transition-property: outline-color;
+  transition-duration: var(--anim-base);
+  transition-timing-function: var(--anim-timing);
+}
+.modal-form-input:hover,
+.modal-form-input:focus {
+  outline-color: var(--color-txt-caption-iris);
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+  transition: fill var(--anim-base) var(--anim-timing);
+  pointer-events: none;
+}
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--color-txt-caption-iris);
+}
+.modal-form-message {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+
+  transition-property: outline-color;
+  transition-duration: var(--anim-base);
+  transition-timing-function: var(--anim-timing);
+  resize: none;
+}
+.modal-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-message:hover,
+.modal-form-message:focus {
+  outline-color: var(--color-txt-caption-iris);
+}
+.modal-form-agreement {
+}
+.modal-form-agreement-box {
+}
+.modal-form-agreement-icon {
+}
+.modal-form-agreement-unchecked {
+}
+.modal-form-agreement-checked {
+}
+.modal-form-agreement-text {
+}
+.modal-form-agreement-link {
+}
