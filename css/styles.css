@@ -805,8 +805,14 @@ img {
 }
 /* .modal-form {
 } */
-.modal-form-wrap {
+.modal-form-wrap-field {
   margin-bottom: 8px;
+}
+.modal-form-wrap-comm {
+  margin-bottom: 16px;
+}
+.modal-form-wrap-chec {
+  margin-bottom: 24px;
 }
 .modal-form-label {
   display: block;
@@ -819,7 +825,7 @@ img {
 }
 .modal-form-field {
   position: relative;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 .modal-form-input {
   width: 100%;
@@ -864,8 +870,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
   outline: 2px solid transparent;
