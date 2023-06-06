@@ -828,6 +828,7 @@ img {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   outline: 2px solid transparent;
   outline-offset: -2px;
 
