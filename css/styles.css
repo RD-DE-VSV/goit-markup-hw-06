@@ -93,9 +93,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 .section {
   padding-top: 120px;
@@ -825,7 +822,6 @@ img {
 }
 .modal-form-field {
   position: relative;
-  /* margin-bottom: 8px; */
 }
 .modal-form-input {
   width: 100%;
@@ -898,50 +894,21 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-border-light-slate);
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* gap: 8px; */
-  /* margin-bottom: 24px; */
+  cursor: pointer;
 }
 /* .modal-form-agreement-box {
-  appearance: none;
-  width: 16px;
-  height: 16px;
 
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-
-  transition: background-color var(--anim-base) var(--anim-timing);
-  transition: border-color var(--anim-base) var(--anim-timing);
-  cursor: pointer;
 } */
-/* .modal-form-agreement-box:checked {
-  background-color: var(--color-bg-hover-ocean);
-  border-color: var(--color-bg-hover-ocean);
-} */
-.modal-form-agreement-box:checked > .modal-form-agreement-box-vis {
+.modal-form-agreement-box:checked
+  + .modal-form-agreement-label
+  > .modal-form-agreement-box-vis {
   background-color: var(--color-bg-hover-ocean);
   border: none;
   fill: var(--color-bg-white);
 }
-/* .modal-form-agreement-box:checked
-  + .modal-form-agreement-icon
-  > .modal-form-agreement-checked {
-  opacity: 1;
-} */
-.modal-form-agreement-icon {
-  /* outline: 2px solid transparent;
-  outline-offset: -2px;
-
-  transition-property: outline-color;
-  transition-duration: var(--anim-base);
-  transition-timing-function: var(--anim-timing); */
+/* .modal-form-agreement-icon {
 }
-.modal-form-agreement-label:hover > .modal-form-agreement-icon,
-.modal-form-agreement-label:focus > .modal-form-agreement-icon {
-  outline-color: var(--color-txt-caption-iris);
-}
+*/
 .modal-form-agreement-box-vis {
   display: inline-flex;
   align-items: center;
@@ -949,6 +916,7 @@ img {
 
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
